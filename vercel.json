@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/:path*",
+      "destination": "https://mini-social-media-server.onrender.com/api/:path*"
+    }
+  ]
+}
