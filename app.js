@@ -20,8 +20,8 @@ const state = {
 };
 
 // Target explicit decoupled backend port 3000 in dev, or relative path / absolute URL in production
-const API_BASE = (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1')
-  ? 'http://localhost:3000/api'
+const API_BASE = (window.location.port === '8000')
+  ? `${window.location.protocol}//${window.location.hostname}:3000/api`
   : '/api'; // Note: If deploying client & server separately without a proxy/redirect, change '/api' to your absolute backend URL (e.g., 'https://your-api.onrender.com/api')
 
 // --- UTILITY FUNCTIONS ---
