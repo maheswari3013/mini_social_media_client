@@ -11,7 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   
   <!-- Stylesheet -->
-  <link rel="stylesheet" href="/style.css?v=4">
+  <link rel="stylesheet" href="/style.css?v=5">
 </head>
 <body>
 
@@ -40,7 +40,12 @@
         </div>
         <div class="form-group">
           <label for="login-password">Password</label>
-          <input type="password" id="login-password" placeholder="••••••••" required autocomplete="current-password">
+          <div class="password-input-container">
+            <input type="password" id="login-password" placeholder="••••••••" required autocomplete="current-password">
+            <button type="button" class="btn-password-toggle" id="btn-login-password-toggle" title="Show Password">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-inline"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+            </button>
+          </div>
         </div>
         <button type="submit" class="btn btn-primary btn-block">Sign In</button>
         <p class="auth-switch">Don't have an account? <a href="#" id="go-to-register">Sign Up</a></p>
@@ -58,7 +63,12 @@
         </div>
         <div class="form-group">
           <label for="register-password">Password</label>
-          <input type="password" id="register-password" placeholder="••••••••" required autocomplete="new-password">
+          <div class="password-input-container">
+            <input type="password" id="register-password" placeholder="••••••••" required autocomplete="new-password">
+            <button type="button" class="btn-password-toggle" id="btn-register-password-toggle" title="Show Password">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-inline"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+            </button>
+          </div>
         </div>
         <button type="submit" class="btn btn-primary btn-block">Create Account</button>
         <p class="auth-switch">Already have an account? <a href="#" id="go-to-login">Sign In</a></p>
@@ -302,6 +312,6 @@
   <div id="toast-container" class="toast-container"></div>
 
   <!-- SPA Controller -->
-  <script src="/app.js?v=4"></script>
+  <script src="/app.js?v=5"></script>
 </body>
 </html>

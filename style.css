@@ -323,6 +323,39 @@ ul {
   background-color: var(--bg-surface);
 }
 
+.password-input-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.password-input-container input {
+  width: 100%;
+  padding-right: 48px !important;
+}
+.btn-password-toggle {
+  position: absolute;
+  right: 12px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: var(--text-subtle);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  border-radius: 50%;
+  transition: all var(--transition-fast);
+}
+.btn-password-toggle:hover {
+  color: var(--text-main);
+  background-color: var(--primary-subtle);
+}
+.btn-password-toggle svg {
+  width: 18px;
+  height: 18px;
+}
+
 /* ==========================================================================
    LOADING SCREEN
    ========================================================================== */
